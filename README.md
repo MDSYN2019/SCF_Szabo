@@ -8,7 +8,22 @@ The matrix diagonalisation procedure depends on the system having just two atoms
 
 I have included a makefile, an executable and a log file showing the output.
 
+## Python version
+
+A readable Python translation is included as `scf_python.py`.
+
+Run it with:
+
+```bash
+python3 scf_python.py
+```
+
+The Python script follows the same three-phase flow as the C program:
+
+1. Evaluate one- and two-electron integrals.
+2. Build overlap/core Hamiltonian/orthogonalization matrices.
+3. Iterate the RHF SCF cycle until density convergence.
+
 The code originally written by Szabo and Ostlund is a great launchpad for those interested in developing code of this nature for full use in general computational chemistry systems.
 I have commented the code to show which equations in the book are being coded at each step of the SCF procedure and I have also numbered the steps involved to help others see what is going on.
-
 
