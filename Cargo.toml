@@ -1,0 +1,10 @@
+[package]
+name = "scf-szabo"
+version = "0.2.0"
+edition = "2021"
+description = "Rust implementation of the Szabo/Ostlund HeH+ STO-nG SCF toy calculation"
+license = "MIT"
+
+[[bin]]
+name = "scf-szabo"
+path = "src/main.rs"
